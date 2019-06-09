@@ -94,7 +94,6 @@ GROUP BY 3, 4, 2
 HAVING Purchases = t1.buys
 ORDER BY 2;
 
-
 WITH t1 AS (SELECT MAX(totalstuff) AS maxtotal,
             sub.country
 FROM (SELECT SUM(i.total) AS totalstuff,
